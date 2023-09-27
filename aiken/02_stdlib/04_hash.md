@@ -1,4 +1,4 @@
-# aiken/hash
+# aiken/hash => OK
 
 - Mô-đun này xác định Hash, một bí danh loại tự ghi lại với loại ảo để dễ đọc.
 
