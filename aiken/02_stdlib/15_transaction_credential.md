@@ -1,4 +1,4 @@
-# aiken/transaction/credential
+# aiken/transaction/credential => OK
 
 ## Type 
 
@@ -54,10 +54,12 @@ Constructor
     Pointer { slot_number: Int, transaction_index: Int, certificate_index: Int }
 
 6. Script
+
 Alias
     Script = ByteArray
 
 7. Signature
+
 Alias
     Signature = ByteArray
 

@@ -1,4 +1,4 @@
-# aiken/transaction/value
+# aiken/transaction/value => OK
 
 ## Types
 
@@ -8,7 +8,7 @@
 
 2. MintedValue
 
-- Một giá trị đa tài sản có thể được tìm thấy khi thực hiện giao dịch. Lưu ý rằng vì lý do lịch sử, điều này hơi khác so với Valuekết quả đầu ra giao dịch. Lưu ý rằng bạn không bao giờ phải tự mình xây dựng một MintedValuecông cụ. Nếu bạn cần thao tác với nhiều giá trị nội dung, hãy sử dụng Giá trị. Xem thêm from_minted_value.
+- Một giá trị đa tài sản có thể được tìm thấy khi thực hiện giao dịch. Lưu ý rằng vì lý do lịch sử, điều này hơi khác so với Value kết quả đầu ra giao dịch. Lưu ý rằng bạn không bao giờ phải tự mình xây dựng một MintedValue công cụ. Nếu bạn cần thao tác với nhiều giá trị nội dung, hãy sử dụng Giá trị. Xem thêm from_minted_value.
 
 3. PolicyId
 

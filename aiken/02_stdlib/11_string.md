@@ -1,4 +1,4 @@
-# aiken/string
+# aiken/string => OK
 
 1. concat(left: String, right: String) -> String
 

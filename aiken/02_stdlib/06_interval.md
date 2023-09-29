@@ -1,4 +1,4 @@
-# aiken/interval
+# aiken/interval => OK
 
 - Trong một blockchain dựa trên eUTxO như Cardano, việc quản lý thời gian có thể rất khó khăn.
 

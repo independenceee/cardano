@@ -1,4 +1,4 @@
-# aiken/transaction/certificate
+# aiken/transaction/certificate => OK
 
 ## Type
 
