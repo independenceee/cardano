@@ -1,0 +1,14 @@
+name = "independence/05_hello_world"
+version = "0.0.0"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'independence/05_hello_world'"
+
+[repository]
+user = "independence"
+project = "05_hello_world"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "1.6.0"
+source = "github"

@@ -1,0 +1,14 @@
+name = "independence/08_fortuna"
+version = "0.0.0"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'independence/08_fortuna'"
+
+[repository]
+user = "independence"
+project = "08_fortuna"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "1.6.0"
+source = "github"

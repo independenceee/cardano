@@ -1,0 +1,14 @@
+name = "independence/09_gift_card"
+version = "0.0.0"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'independence/09_gift_card'"
+
+[repository]
+user = "independence"
+project = "09_gift_card"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "1.6.0"
+source = "github"
