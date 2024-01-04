@@ -1,0 +1,14 @@
+name = "independence/06_vesting"
+version = "0.0.0"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'independence/06_vesting'"
+
+[repository]
+user = "independence"
+project = "06_vesting"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "1.7.0"
+source = "github"
