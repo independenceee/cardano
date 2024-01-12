@@ -1,0 +1,1 @@
+# AIKEN_SMART_ADDRESS = addr_test1wzmz8vnkpadcxsay0z38lecr69zd85djp4dwhkdlnjd3huq2xm7ep
