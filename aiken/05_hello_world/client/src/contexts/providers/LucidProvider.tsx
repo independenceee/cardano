@@ -9,11 +9,19 @@ type Props = { children: ReactNode };
 
 const LucidProvider = function ({ children }: Props) {
     
-    const [lucid, setLucid] = useState<Lucid>(null!)
+    const [lucidWallet, setLucidWallet] = useState<Lucid>(null!)
 
     const connectWallet = async function() {
         try {
-
+            const lucid = await Lucid.new(
+                new Blockfrost(
+                    "https://cardano-preprod.blockfrost.io/api/v0", 
+                    "preprodQfe5parraxgP3k0IqDnrptIvZVBejjsS"),
+                    "Preprod",
+                );
+            lucid.selectWallet(await window.cardano.nami.enable());
+            setLucidWallet(lucid)
+            console.log(lucid)
         }catch(error) {
             console.log(error);
         } finally {
@@ -23,7 +31,6 @@ const LucidProvider = function ({ children }: Props) {
 
     const disconnectWallet = async function() {
         try {
-
         }catch(error) {
             console.log(error);
         } finally {
@@ -34,7 +41,7 @@ const LucidProvider = function ({ children }: Props) {
     return (
         <LucidContext.Provider
             value={{
-                lucid,
+                lucidWallet,
                 connectWallet,
                 disconnectWallet
             }}

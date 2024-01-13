@@ -1,7 +1,7 @@
 import { Lucid } from "lucid-cardano"
 
 export type LucidContextType =  {
-    lucid: Lucid,
+    lucidWallet: Lucid,
     connectWallet: () => Promise<void>,
     disconnectWallet: () => Promise<void>
 }
