@@ -1,0 +1,65 @@
+{
+    "preamble": {
+      "title": "independence/05_hello_world",
+      "description": "Aiken contracts for project 'independence/05_hello_world'",
+      "version": "0.0.0",
+      "plutusVersion": "v2",
+      "license": "Apache-2.0"
+    },
+    "validators": [
+      {
+        "title": "hello_world.spend",
+        "datum": {
+          "title": "datum",
+          "schema": {
+            "$ref": "#/definitions/hello_world~1Datum"
+          }
+        },
+        "redeemer": {
+          "title": "redeemer",
+          "schema": {
+            "$ref": "#/definitions/hello_world~1Redeemer"
+          }
+        },
+        "compiledCode": "59010b010000323232323232323232322223232533300a3232533300c001100214a06644646600200200644a66602400229404c8c94ccc044cdc78010028a511330040040013015002375c60260026eb0cc01cc024cc01cc024011200048040dd71980398048032400066e3cdd71980318040022400091010b48656c6c6f20776f726c6400149858c94ccc028cdc3a400000226464a66601e60220042930b1bae300f00130080041630080033253330093370e900000089919299980718080010a4c2c6eb8c038004c01c01058c01c00ccc0040052000222233330073370e0020060164666600a00a66e000112002300d001002002230053754002460066ea80055cd2ab9d5573caae7d5d0aba21",
+        "hash": "e9d19073083b5a205217b028eb9bb8a69c5fb0c328a6960b872ea7a9"
+      }
+    ],
+    "definitions": {
+      "ByteArray": {
+        "dataType": "bytes"
+      },
+      "hello_world/Datum": {
+        "title": "Datum",
+        "anyOf": [
+          {
+            "title": "Datum",
+            "dataType": "constructor",
+            "index": 0,
+            "fields": [
+              {
+                "title": "owner",
+                "$ref": "#/definitions/ByteArray"
+              }
+            ]
+          }
+        ]
+      },
+      "hello_world/Redeemer": {
+        "title": "Redeemer",
+        "anyOf": [
+          {
+            "title": "Redeemer",
+            "dataType": "constructor",
+            "index": 0,
+            "fields": [
+              {
+                "title": "msg",
+                "$ref": "#/definitions/ByteArray"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }

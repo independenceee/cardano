@@ -1,0 +1,2 @@
+export const contractAddressHelloWorld = "addr_test1wr5aryrnpqa45gzjz7cz36umhznfchascv52d9stsuh202guwsvez"
+

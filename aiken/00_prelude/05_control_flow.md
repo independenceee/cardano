@@ -20,9 +20,9 @@ let celsius = { fahrenheit - 32 } * 5 / 9
 
 2. Matching
 
-- Biểu when *expr* isthức là loại điều khiển luồng phổ biến nhất trong mã Aiken. Nó cho phép chúng ta nói "nếu dữ liệu có hình dạng này thì hãy làm cái kia", mà chúng ta gọi là khớp mẫu .
+- Biểu when *expr* is thức là loại điều khiển luồng phổ biến nhất trong mã Aiken. Nó cho phép chúng ta nói "nếu dữ liệu có hình dạng này thì hãy làm cái kia", mà chúng ta gọi là khớp mẫu .
 
-- Ở đây, chúng tôi khớp với an Intvà trả về một chuỗi cụ thể cho các giá trị 0, 1 và 2. Mẫu cuối cùng nkhớp với bất kỳ giá trị nào khác không khớp với bất kỳ mẫu nào trước đó.
+- Ở đây, chúng tôi khớp với an Int và trả về một chuỗi cụ thể cho các giá trị 0, 1 và 2. Mẫu cuối cùng n khớp với bất kỳ giá trị nào khác không khớp với bất kỳ mẫu nào trước đó.
 
 ```aiken
 when some_number is {
@@ -33,7 +33,7 @@ when some_number is {
 }
 ```
 
-Aiken when *expr* islà một biểu thức, nghĩa là nó trả về một giá trị và có thể được sử dụng ở bất cứ đâu mà chúng ta sử dụng một giá trị. Ví dụ: chúng ta có thể đặt tên cho giá trị được đánh giá từ biểu thức when bằng một letliên kết.
+Aiken when *expr* is là một biểu thức, nghĩa là nó trả về một giá trị và có thể được sử dụng ở bất cứ đâu mà chúng ta sử dụng một giá trị. Ví dụ: chúng ta có thể đặt tên cho giá trị được đánh giá từ biểu thức when bằng một let liên kết.
 
 ```aiken
 type Answer {
@@ -54,7 +54,7 @@ description == "It's true!"
 
 3. If-Else
 
-- Việc khớp mẫu trên một Boolgiá trị không được khuyến khích và if / else thay vào đó nên sử dụng các biểu thức.
+- Việc khớp mẫu trên một Bool giá trị không được khuyến khích và if / else thay vào đó nên sử dụng các biểu thức.
 
 ```aiken
 let some_bool = True
@@ -95,7 +95,7 @@ when xs is {
 }
 ```
 
-- Không chỉ cấu trúc dữ liệu cấp cao nhất có thể được khớp mẫu mà các giá trị được chứa cũng có thể được khớp. Điều này mang lại whenkhả năng thể hiện chính xác điều khiển luồng có thể dài dòng mà không cần khớp mẫu.
+- Không chỉ cấu trúc dữ liệu cấp cao nhất có thể được khớp mẫu mà các giá trị được chứa cũng có thể được khớp. Điều này mang lại when khả năng thể hiện chính xác điều khiển luồng có thể dài dòng mà không cần khớp mẫu.
 
 ```aiken
 when xs is {
