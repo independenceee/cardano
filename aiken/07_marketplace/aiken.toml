@@ -1,0 +1,14 @@
+name = "independence/07_marketplace"
+version = "0.0.0"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'independence/07_marketplace'"
+
+[repository]
+user = "independence"
+project = "07_marketplace"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "1.7.0"
+source = "github"

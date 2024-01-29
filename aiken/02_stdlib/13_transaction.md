@@ -40,9 +40,9 @@
 - Alias
     + Redeemer = Data
 
-5. ScriptContext
+##### 5. ScriptContext
 
-- Bối cảnh được sổ cái Cardano cung cấp cho tập lệnh khi được thực thi. Ngữ cảnh chứa thông tin về toàn bộ giao dịch có chứa tập lệnh. Giao dịch cũng có thể chứa các tập lệnh khác; để phân biệt giữa nhiều tập lệnh, tập lệnh này ScriptContextcũng chứa tập purpose lệnh cho biết tập lệnh nào (hoặc vì mục đích gì) của giao dịch đang được thực thi.
+- Bối cảnh được sổ cái Cardano cung cấp cho tập lệnh khi được thực thi. Ngữ cảnh chứa thông tin về toàn bộ giao dịch có chứa tập lệnh. Giao dịch cũng có thể chứa các tập lệnh khác; để phân biệt giữa nhiều tập lệnh, tập lệnh này ScriptContext cũng chứa tập purpose lệnh cho biết tập lệnh nào (hoặc vì mục đích gì) của giao dịch đang được thực thi.
 
 - Constructor 
     + ScriptContext { 

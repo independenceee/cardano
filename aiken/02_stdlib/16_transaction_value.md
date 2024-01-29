@@ -12,7 +12,7 @@
 
 3. PolicyId
 
-- Bí danh loại cho a PolicyId. A PolicyIdluôn dài 28 byte
+- Bí danh loại cho a PolicyId. A PolicyId luôn dài 28 byte
 - Alias
     + PolicyId = Hash<Blake2b_224, Script>
 
@@ -50,15 +50,15 @@
 
 5. from_lovelace(quantity: Int) -> Value
 
-- Xây dựng một Valuetừ một số lượng đáng yêu. Lời nhắc thân thiện: 1 Ada = 1.000.000 Lovelace
+- Xây dựng một Value từ một số lượng đáng yêu. Lời nhắc thân thiện: 1 Ada = 1.000.000 Lovelace
 
 6. from_minted_value(self: MintedValue) -> Value
 
-- Chuyển đổi a MintedValuethành a Value.
+- Chuyển đổi a MintedValue thành a Value.
 
-7. lovelace_of(self: Value) -> Int
+## 7. lovelace_of(self: Value) -> Int
 
-- Một phiên bản chuyên biệt quantity_ofdành cho tiền Ada.
+- Một phiên bản chuyên biệt quantity_of dành cho tiền Ada.
 
 8. merge(left: Value, right: Value) -> Value
 
@@ -88,18 +88,18 @@ v1
 
 - Chuyển đổi giá trị thành một từ điển từ điển.
 
-13. to_minted_value(self: Value) -> MintedValue
+## 13. to_minted_value(self: Value) -> MintedValue
 
-- Chuyển đổi a Valuethành a MintedValue.
+- Chuyển đổi a Value thành a MintedValue.
 
-14. tokens(self: Value, policy_id: PolicyId) -> Dict<AssetName, Int>
+## 14. tokens(self: Value, policy_id: PolicyId) -> Dict<AssetName, Int>
 
 - Nhận tất cả các mã thông báo được liên kết với một chính sách nhất định.
 
-15. without_lovelace(self: Value) -> Value
+## 15. without_lovelace(self: Value) -> Value
 
-- Nhận một Valueloại trừ Ada.
+- Nhận một Value loại trừ Ada.
 
-16. zero() -> Value
+## 16. zero() -> Value
 
-- Tạo một cái trống Valuekhông có gì trong đó.
+- Tạo một cái trống Value không có gì trong đó.

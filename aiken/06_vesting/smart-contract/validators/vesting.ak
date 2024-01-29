@@ -17,8 +17,12 @@ type Datum {
 }
 
 validator {
-  fn vesting(datum: Datum, redeemer: Void, ctx: ScriptContext) -> Bool {
+  fn vesting(datum: Datum, _redeemer: Void, ctx: ScriptContext) -> Bool {
+
+
     when ctx.purpose is {
+
+
       Spend(_) -> or {
           must_be_signed_by(ctx.transaction, datum.owner),
           and {

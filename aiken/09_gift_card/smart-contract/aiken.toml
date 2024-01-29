@@ -1,14 +1,14 @@
-name = "independence/06_vesting"
+name = "independence/smart-contract"
 version = "0.0.0"
 license = "Apache-2.0"
-description = "Aiken contracts for project 'independence/06_vesting'"
+description = "Aiken contracts for project 'independence/smart-contract'"
 
 [repository]
 user = "independence"
-project = "06_vesting"
+project = "smart-contract"
 platform = "github"
 
 [[dependencies]]
 name = "aiken-lang/stdlib"
-version = "1.7.0"
+version = "1.5.0"
 source = "github"

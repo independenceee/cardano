@@ -4,7 +4,7 @@
 
 1. Address
 
-- Cardano Addressthường chứa một hoặc hai tài liệu tham khảo thông tin xác thực.
+- Cardano Address thường chứa một hoặc hai tài liệu tham khảo thông tin xác thực.
 
 Lưu ý rằng các địa chỉ bootstrap kế thừa (còn gọi là 'địa chỉ Byron') bị loại trừ hoàn toàn khỏi bối cảnh Plutus. Do đó, từ góc độ trên chuỗi chỉ tồn tại các địa chỉ loại 00, 01, …, 07 như được nêu chi tiết trong CIP-0019 :: Địa chỉ Shelley .
 

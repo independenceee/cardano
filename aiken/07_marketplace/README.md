@@ -1,4 +1,4 @@
-# 09_gift_card
+# 07_marketplace
 
 Write validators in the `validators` folder, and supporting functions in the `lib` folder using `.ak` as a file extension.
 

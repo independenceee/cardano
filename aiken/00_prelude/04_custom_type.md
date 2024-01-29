@@ -18,7 +18,7 @@ type Datum {
 fn datums() {
     let datum1 = Datum { signer: #[0xAA, 0xBB], count: 2001 }
     let datum2 = Datum { count: 1805, signer: #[0xAA, 0xCC] }
-    [cat1, cat2]
+    [datum1, datum2]
 }
 ```
 
