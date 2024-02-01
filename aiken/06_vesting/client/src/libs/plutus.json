@@ -1,0 +1,71 @@
+{
+  "preamble": {
+    "title": "independence/smart-contract",
+    "description": "Aiken contracts for project 'independence/smart-contract'",
+    "version": "0.0.0",
+    "plutusVersion": "v2",
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "vesting.vesting",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/vesting~1Datum"
+        }
+      },
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Void"
+        }
+      },
+      "compiledCode": "590167010000323232323232323232322223253330093232533300b3370e900100089919299980699800998049805803240006eb8cc024c02c021200214a22a66601a6600266012601600c90001bae33009300b008480104cc88c8c94ccc044cdc3a40040022646466e24014004dd6980b00098078010a50300f0013300b300d3300b300d00248001200033009300b33009300b00648001200e375a66012601601090000a50223322323300100100322533301500114a026464a66602866e3c008014528899802002000980c0011bae30160013758660146018004900800098048010a50300900133005300700248008526163253330093370e900000089919191919192999809180a0010a4c2c6eb8c048004c048008dd7180800098080011bad300e001300700416300700333001001480008888cccc01ccdc38008018059199980280299b8000448008c0340040080088c014dd5000918019baa0015734aae7555cf2ab9f5742ae89",
+      "hash": "59100479a01d7194c53525b270f84591672236ba007a20e2b2db941e"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "Void": {
+      "title": "Unit",
+      "description": "The nullary constructor.",
+      "anyOf": [
+        {
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        }
+      ]
+    },
+    "vesting/Datum": {
+      "title": "Datum",
+      "anyOf": [
+        {
+          "title": "Datum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "lock_until",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "owner",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "beneficiary",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
